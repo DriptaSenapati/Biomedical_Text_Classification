@@ -213,7 +213,7 @@ model = tf.keras.Sequential([
 
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=[tf.keras.metrics.AUC(),"acc"])
 
-history = model.fit(training_dataset, epochs=2,
+history = model.fit(training_dataset, epochs=5,
                     validation_data=testing_dataset,
                     validation_steps=1)
 
